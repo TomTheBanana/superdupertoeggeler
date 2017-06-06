@@ -5,7 +5,7 @@ Created on Tue Jun  6 21:04:21 2017
 @author: thomas
 """
 
-from flask import Flask, request
+from flask import Flask, render_template
 
 #__name__ points to root path 
 app = Flask(__name__)
@@ -14,7 +14,7 @@ app = Flask(__name__)
 def index():
    
      #here we would pass in a html template
-     return "This is the homepage wohooooooooo!!!"
+     return render_template("test.html")
      
 
 #makes shure that we start the webserver when we run the file
