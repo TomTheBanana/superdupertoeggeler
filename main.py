@@ -14,7 +14,7 @@ app = Flask(__name__)
 def index():
    
      #here we would pass in a html template
-     return render_template("test.html")
+     return render_template("index.html")
      
 
 #makes shure that we start the webserver when we run the file
