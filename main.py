@@ -18,6 +18,13 @@ def index():
      #return app.send_static_file('index.html')
      
 
+
+
+@app.route('/schlachtfeld')
+def schlachtfeld():
+     return render_template("wireframe.html")
+
+
 #makes shure that we start the webserver when we run the file
 if __name__ == "__main__":
      app.run()
